@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLANKA — Indie Gamer & Creative Enthusiast</title>
+  <meta name="description"
+    content="Portfolio of Blanka — an indie gamer and creative enthusiast exploring imaginative game worlds, interactive storytelling, and game-inspired creative work.">
+  <meta name="keywords"
+    content="Blanka, indie gamer, creative portfolio, game exploration, interactive design, gaming enthusiast">
+  <meta name="author" content="Blanka">
+  <meta name="theme-color" content="#0B0E0C">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BLANKA — Indie Gamer & Creative Enthusiast">
+  <meta property="og:description"
+    content="Exploring imaginative worlds, memorable experiences, and the creativity behind great games.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+
+  <!-- Google Fonts: Space Grotesk (Headings & Display) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Glow Background Canvas / Elements -->
+  <div class="ambient-glow-bg" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- SECTION A: Header & Navigation -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Blanka Home">
+        <span class="brand-monogram" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <polygon points="12,2 22,20 2,20" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" />
+            <polygon points="12,8 18,18 6,18" fill="currentColor" opacity="0.85" />
+          </svg>
+        </span>
+        <span class="brand-text">BLANKA</span>
+        <span class="brand-badge">LVL.01</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#work" class="nav-link">My Work</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#work" class="btn btn-primary btn-sm nav-cta">
+          <span>Explore My Work</span>
+          <svg class="icon-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobile-nav">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation" hidden>
+      <div class="mobile-nav-inner">
+        <div class="mobile-nav-header">
+          <div class="mobile-nav-label">NAVIGATION // PROTOCOL</div>
+          <button type="button" class="mobile-close" id="mobile-close" aria-label="Close navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-links">
+          <li><a href="#hero" class="mobile-link"><span class="link-idx">01</span> Home</a></li>
+          <li><a href="#work" class="mobile-link"><span class="link-idx">02</span> My Work</a></li>
+          <li><a href="#about" class="mobile-link"><span class="link-idx">03</span> About</a></li>
+          <li><a href="#contact" class="mobile-link"><span class="link-idx">04</span> Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <a href="#work" class="btn btn-primary btn-block mobile-cta">
+            <span>Explore My Work</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+          <div class="mobile-status-tag">
+            <span class="status-dot"></span>
+            <span>STATUS: EXPLORING NEW WORLDS</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- SECTION B: Hero — Enter Blanka's World -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-heading">
+      <div class="container hero-container">
+
+        <!-- Hero Left Column: Narrative & Action -->
+        <div class="hero-content" data-reveal>
+          <div class="hero-meta-badge">
+            <span class="hud-crosshair" aria-hidden="true">+</span>
+            <span class="meta-label">PLAYER PROFILE / 001</span>
+          </div>
+
+          <div class="hero-status-pill">
+            <span class="pulse-indicator" aria-hidden="true"></span>
+            <span class="status-text">CURRENT STATUS: EXPLORING NEW WORLDS</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="title-line">I PLAY.</span>
+            <span class="title-line">I EXPLORE.</span>
+            <span class="title-line highlight-green">I CREATE.</span>
+          </h1>
+
+          <p class="hero-description">
+            I'm Blanka — an indie gamer drawn to imaginative worlds, memorable experiences, and the creativity behind
+            great games. This is where my gaming journey and creative work come together.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary btn-lg">
+              <span>EXPLORE MY WORK</span>
+              <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-secondary btn-lg">
+              <span>MORE ABOUT ME</span>
+            </a>
+          </div>
+
+          <!-- Hero Gamer Telemetry Strip -->
+          <div class="hero-telemetry" aria-label="Gamer Quick Specs">
+            <div class="telemetry-item">
+              <span class="telemetry-label">FOCUS</span>
+              <span class="telemetry-val">Indie Games & Discovery</span>
+            </div>
+            <div class="telemetry-divider" aria-hidden="true"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-label">PLATFORMS</span>
+              <span class="telemetry-val">PC / Steam / Handheld</span>
+            </div>
+            <div class="telemetry-divider" aria-hidden="true"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-label">CREATIVE</span>
+              <span class="telemetry-val">Worlds & Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Atmospheric Gaming Composition -->
+        <div class="hero-visual-wrapper" data-reveal data-reveal-delay="200">
+          <div class="hud-frame" id="hero-hud-frame">
+            <!-- HUD Corner Marks -->
+            <span class="hud-corner top-left" aria-hidden="true"></span>
+            <span class="hud-corner top-right" aria-hidden="true"></span>
+            <span class="hud-corner bottom-left" aria-hidden="true"></span>
+            <span class="hud-corner bottom-right" aria-hidden="true"></span>
+
+            <!-- HUD Top Header -->
+            <div class="hud-top-bar" aria-hidden="true">
+              <span class="hud-code">VIEWPORT // WORLD_SIM_V1.4</span>
+              <span class="hud-fps"><span class="hud-dot"></span> 60 FPS</span>
+            </div>
+
+            <!-- Visual Image Container with Scanline Filter -->
+            <div class="hero-image-box">
+              <img src="assets/images/hero.jpg"
+                alt="Atmospheric surreal indie game landscape with floating mossy cliffs and emerald green bioluminescence"
+                class="hero-main-img" width="1280" height="720" fetchpriority="high">
+              <div class="scanline-overlay" aria-hidden="true"></div>
+              <div class="vignette-overlay" aria-hidden="true"></div>
+            </div>
+
+            <!-- Floating Gaming HUD Elements -->
+            <div class="hud-floating-card hud-card-1" aria-hidden="true">
+              <div class="hud-card-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12,2 22,20 2,20" />
+                </svg>
+              </div>
+              <div class="hud-card-text">
+                <span class="hud-card-title">LOCATION: UNCHARTED ISLES</span>
+                <span class="hud-card-sub">COORDINATES: 48.2°N / 12.8°E</span>
+              </div>
+            </div>
+
+            <div class="hud-floating-card hud-card-2" aria-hidden="true">
+              <span class="pulse-indicator-small"></span>
+              <span class="hud-card-badge">IMMERSIVE EXP // ACTIVE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Invitation Indicator -->
+      <a href="#work" class="scroll-cue" aria-label="Scroll down to Selected Work">
+        <span class="scroll-text">SCROLL TO DISCOVER</span>
+        <div class="scroll-mouse" aria-hidden="true">
+          <span class="scroll-wheel"></span>
+        </div>
+      </a>
+    </section>
+
+    <!-- SECTION C: Featured Work -->
+    <section class="section work-section" id="work" aria-labelledby="work-heading">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-reveal>
+          <div class="section-label">
+            <span class="hud-crosshair" aria-hidden="true">/</span>
+            <span>02 / SELECTED WORK</span>
+          </div>
+          <h2 class="section-title" id="work-heading">A LOOK INSIDE MY WORLD.</h2>
+          <p class="section-description">
+            Games, experiments, and creative projects that reflect what I enjoy exploring.
+          </p>
+        </div>
+
+        <!-- Project Grid (Populated dynamically via script.js for easy maintenance, with semantic fallback) -->
+        <div class="project-grid" id="project-grid">
+          <!-- Fallback content in case JS is disabled; will be enhanced by script.js -->
+          <article class="project-card" data-project-id="1" data-reveal>
+            <div class="project-thumb-wrap">
+              <img src="assets/images/project-1.jpg"
+                alt="Game Discovery project artwork featuring ancient neon green ruins" class="project-thumb"
+                loading="lazy">
+              <div class="project-thumb-tag">CONCEPT ARCHIVE</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Gaming / Exploration</span>
+                <span class="project-number">01</span>
+              </div>
+              <h3 class="project-title">Game Discovery</h3>
+              <p class="project-desc">
+                Exploring imaginative game worlds, mechanics, and the experiences that make players want to keep
+                discovering.
+              </p>
+              <div class="project-tags">
+                <span class="tag">World Exploration</span>
+                <span class="tag">Level Analysis</span>
+                <span class="tag">Environmental Storytelling</span>
+              </div>
+              <button type="button" class="btn btn-outline btn-project-view" data-action="view-project" data-index="0">
+                <span>View Project</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card" data-project-id="2" data-reveal data-reveal-delay="100">
+            <div class="project-thumb-wrap">
+              <img src="assets/images/project-2.jpg"
+                alt="Interactive Experiments screenshot displaying audio-reactive geometry" class="project-thumb"
+                loading="lazy">
+              <div class="project-thumb-tag">CONCEPT ARCHIVE</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Creative Experiments</span>
+                <span class="project-number">02</span>
+              </div>
+              <h3 class="project-title">Interactive Experiments</h3>
+              <p class="project-desc">
+                Small creative explorations inspired by interactive storytelling, game interfaces, and playful digital
+                experiences.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Shader Art</span>
+                <span class="tag">Soundwave Physics</span>
+                <span class="tag">Creative Code</span>
+              </div>
+              <button type="button" class="btn btn-outline btn-project-view" data-action="view-project" data-index="1">
+                <span>View Project</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card" data-project-id="3" data-reveal data-reveal-delay="200">
+            <div class="project-thumb-wrap">
+              <img src="assets/images/project-3.jpg"
+                alt="My Gaming Universe artwork displaying celestial handheld console and game cartridges"
+                class="project-thumb" loading="lazy">
+              <div class="project-thumb-tag">CONCEPT ARCHIVE</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Personal Project</span>
+                <span class="project-number">03</span>
+              </div>
+              <h3 class="project-title">My Gaming Universe</h3>
+              <p class="project-desc">
+                A collection of gaming interests, visual inspirations, and experiments that reflect my evolving creative
+                journey.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Indie Curation</span>
+                <span class="tag">Visual Diary</span>
+                <span class="tag">Archive</span>
+              </div>
+              <button type="button" class="btn btn-outline btn-project-view" data-action="view-project" data-index="2">
+                <span>View Project</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION D: About Blanka -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Text Column -->
+          <div class="about-content" data-reveal>
+            <div class="section-label">
+              <span class="hud-crosshair" aria-hidden="true">/</span>
+              <span>03 / THE PLAYER BEHIND THE SCREEN</span>
+            </div>
+            <h2 class="section-title" id="about-heading"> JUST PLAYIMORE THANNG.</h2>
+            <p class="section-lead">
+              I'm curious about the worlds people create, the stories they tell, and the experiences that make games
+              memorable. Gaming is a space where imagination, discovery, and creativity meet — and I'm excited to keep
+              exploring it.
+            </p>
+            <p class="about-subtext">
+              Whether dissecting ambient environmental storytelling, experimenting with playful digital interfaces, or
+              diving into independent hidden gems, my work is driven by the thrill of exploration.
+            </p>
+
+            <!-- 3 Core Interest Cards -->
+            <div class="interests-container">
+              <div class="interest-card" data-reveal>
+                <div class="interest-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                  </svg>
+                </div>
+                <div class="interest-info">
+                  <h3 class="interest-title">Worldbuilding & Exploration</h3>
+                  <p class="interest-desc">Uncovering rich lore, map architecture, and atmospheric environments crafted
+                    to reward curiosity.</p>
+                </div>
+              </div>
+
+              <div class="interest-card" data-reveal data-reveal-delay="100">
+                <div class="interest-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="6" width="20" height="12" rx="4"></rect>
+                    <line x1="6" y1="12" x2="10" y2="12"></line>
+                    <line x1="8" y1="10" x2="8" y2="14"></line>
+                    <line x1="15" y1="11" x2="15.01" y2="11"></line>
+                    <line x1="18" y1="13" x2="18.01" y2="13"></line>
+                  </svg>
+                </div>
+                <div class="interest-info">
+                  <h3 class="interest-title">Interactive Experiences</h3>
+                  <p class="interest-desc">Experimenting with tactile interfaces, diegetic game menus, and mechanics
+                    that heighten player immersion.</p>
+                </div>
+              </div>
+
+              <div class="interest-card" data-reveal data-reveal-delay="200">
+                <div class="interest-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="interest-info">
+                  <h3 class="interest-title">Indie Game Culture</h3>
+                  <p class="interest-desc">Championing bold independent creators, distinctive art directions, and
+                    inventive indie storytelling.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Column -->
+          <div class="about-visual-column" data-reveal data-reveal-delay="200">
+            <div class="profile-card">
+              <!-- HUD frame elements -->
+              <span class="hud-corner top-left" aria-hidden="true"></span>
+              <span class="hud-corner top-right" aria-hidden="true"></span>
+              <span class="hud-corner bottom-left" aria-hidden="true"></span>
+              <span class="hud-corner bottom-right" aria-hidden="true"></span>
+
+              <div class="profile-img-wrap">
+                <img src="assets/images/about.jpg"
+                  alt="Blanka, indie gamer and creative enthusiast with headphones and controller in ambient green illuminated space"
+                  class="profile-img" loading="lazy">
+                <div class="profile-gradient" aria-hidden="true"></div>
+              </div>
+
+              <!-- Profile HUD Metadata Overlay -->
+              <div class="profile-hud-data">
+                <div class="profile-hud-row">
+                  <span class="hud-label">HANDLE:</span>
+                  <span class="hud-value highlight">BLANKA</span>
+                </div>
+                <div class="profile-hud-row">
+                  <span class="hud-label">ROLE:</span>
+                  <span class="hud-value">Gamer & Creative Explorer</span>
+                </div>
+                <div class="profile-hud-row">
+                  <span class="hud-label">PASSION:</span>
+                  <span class="hud-value">Indie Worlds & Visual Experiments</span>
+                </div>
+                <div class="profile-hud-status">
+                  <span class="status-dot"></span>
+                  <span>ONLINE // READY TO COLLABORATE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION E: Contact / Let's Connect -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-box" data-reveal>
+          <div class="contact-inner">
+            <div class="section-label">
+              <span class="hud-crosshair" aria-hidden="true">/</span>
+              <span>04 / CONTINUE THE JOURNEY</span>
+            </div>
+            <h2 class="contact-heading" id="contact-heading">LET'S CREATE SOMETHING INTERESTING.</h2>
+            <p class="contact-text">
+              Have a project, an interesting game, or an idea worth exploring? I'd love to connect.
+            </p>
+
+            <!-- Direct Contact Actions -->
+            <div class="contact-actions">
+              <a href="mailto:blanka.creative@example.com" class="btn btn-primary btn-lg" id="contact-email-btn">
+                <span>GET IN TOUCH</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+
+              <button type="button" class="btn btn-secondary btn-lg" id="copy-email-btn"
+                data-email="blanka.creative@example.com" aria-label="Copy email address to clipboard">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>COPY EMAIL</span>
+              </button>
+            </div>
+
+            <!-- Displayed Email Address Pill (Configurable) -->
+            <div class="email-display-pill" id="email-display">
+              <span class="email-label">DIRECT SIGNAL:</span>
+              <span class="email-val">blanka.creative@example.com</span>
+            </div>
+
+            <!-- Social & Gaming Profile Links (Configurable via script.js) -->
+            <div class="social-links-wrap">
+              <div class="social-heading">COMMUNICATION CHANNELS</div>
+              <ul class="social-list" id="social-links-list">
+                <!-- Injected via script.js or fallback -->
+                <li>
+                  <a href="https://itch.io" target="_blank" rel="noopener noreferrer" class="social-link"
+                    aria-label="itch.io profile">
+                    <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M2.998 5.006c-.552 0-1.002.45-1.002 1.003v1.986c0 .553.45 1.003 1.002 1.003h.334l1.666 8.334A2.003 2.003 0 0 0 6.962 19h10.076a2.003 2.003 0 0 0 1.964-1.668l1.666-8.334h.334c.553 0 1.002-.45 1.002-1.003V6.009c0-.553-.45-1.003-1.002-1.003H2.998zm6.5 5.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5.004 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zM8 15h8v1H8v-1z" />
+                    </svg>
+                    <span>itch.io</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                    aria-label="Steam profile">
+                    <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 2a10 10 0 0 0-9.95 9.1L6.7 12.8a3.5 3.5 0 0 1 3.8-1.55l3.05-4.4a.5.5 0 0 1 .45-.25h.05a4 4 0 1 1 0 8 4 4 0 0 1-3.66-2.4l-4.22 1.76a3.5 3.5 0 0 1-4.17 1.34A10 10 0 1 0 12 2zm6 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-9.5 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                    </svg>
+                    <span>Steam</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                    aria-label="GitHub profile">
+                    <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    <span>GitHub</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                    aria-label="LinkedIn profile">
+                    <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37z" />
+                    </svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SECTION F: Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo" aria-label="Blanka Home">
+          <span class="brand-monogram" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <polygon points="12,2 22,20 2,20" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" />
+              <polygon points="12,8 18,18 6,18" fill="currentColor" opacity="0.85" />
+            </svg>
+          </span>
+          <span class="brand-text">BLANKA</span>
+        </a>
+        <p class="footer-tagline">Built with curiosity and a love for interactive worlds.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-meta">
+          <span class="copyright-text">© <span id="current-year">2026</span> BLANKA. ALL RIGHTS RESERVED.</span>
+          <span class="footer-status-pill">VERSION 1.0</span>
+        </div>
+        <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+          <span>BACK TO TOP</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Project Preview Modal -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title"
+    hidden>
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-meta-tag" id="modal-category">CATEGORY // TYPE</div>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close project preview">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-img-wrap">
+          <img src="" alt="" id="modal-project-img" class="modal-img">
+          <div class="modal-img-badge" id="modal-badge">ARCHIVE PREVIEW</div>
+        </div>
+        <div class="modal-content">
+          <h2 class="modal-title" id="modal-project-title">Project Title</h2>
+          <p class="modal-desc" id="modal-project-desc">Project extended description.</p>
+
+          <div class="modal-tags-section">
+            <div class="modal-section-label">TAGS & HIGHLIGHTS</div>
+            <div class="modal-tags" id="modal-tags-container"></div>
+          </div>
+
+          <div class="modal-notice">
+            <span class="notice-icon" aria-hidden="true">ℹ</span>
+            <span>This is an editable showcase entry. Blanka can add custom demo links or GitHub repositories in
+              <code>script.js</code>.</span>
+          </div>
+
+          <div class="modal-actions">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-action-btn">
+              <span>VISIT PROJECT LINK</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <button type="button" class="btn btn-secondary" id="modal-close-alt">
+              <span>CLOSE PREVIEW</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification (for copy email feedback) -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
